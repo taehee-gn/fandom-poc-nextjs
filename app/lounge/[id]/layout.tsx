@@ -3,6 +3,7 @@ import { getLounge } from "@/features/lounge/api";
 import { LoungeHeader } from "@/features/lounge/components/LoungeHeader";
 import { LoungeTabs } from "@/features/lounge/components/LoungeTabs";
 import { isApiError } from "@/lib/http/client";
+import { QueryProvider } from "@/lib/query/QueryProvider";
 
 export default async function LoungeLayout({
   children,
@@ -22,7 +23,9 @@ export default async function LoungeLayout({
       <LoungeHeader lounge={lounge} />
       <div className="mx-auto max-w-[1280px] px-5 sm:px-10">
         <LoungeTabs handle={lounge.handle} tabs={lounge.tabs} />
-        <main className="py-10">{children}</main>
+        <QueryProvider>
+          <main className="py-10">{children}</main>
+        </QueryProvider>
       </div>
     </div>
   );

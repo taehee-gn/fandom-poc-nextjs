@@ -1,4 +1,5 @@
-import type { Lounge, LoungeArtist, LoungeStoriesResponse } from "../types";
+import type { Lounge, LoungeArtist } from "../types";
+import type { LoungeStoriesResponse } from "../story/types";
 import loungeData from "./lounge.json";
 import artistsData from "./artists.json";
 import storiesData from "./stories.json";
