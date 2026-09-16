@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <main className="min-h-svh bg-white font-[Arial,'Apple_SD_Gothic_Neo','Noto_Sans_KR',sans-serif] text-neutral-900">
@@ -14,8 +16,8 @@ export default function Home() {
           </h1>
         </header>
 
-        <button
-          type="button"
+        <Link
+          href="/lounge"
           className="flex min-h-[83px] w-full cursor-pointer items-center justify-center gap-1.5 rounded border-0 bg-transparent p-4 text-sm leading-[22px] text-[#999] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#4d7cff]"
         >
           <span className="relative block size-3.5 shrink-0" aria-hidden="true">
@@ -23,7 +25,7 @@ export default function Home() {
             <span className="absolute top-0 left-1/2 h-full w-[1.5px] -translate-x-1/2 bg-current" />
           </span>
           <span>내 라운지 찾기</span>
-        </button>
+        </Link>
       </section>
     </main>
   );

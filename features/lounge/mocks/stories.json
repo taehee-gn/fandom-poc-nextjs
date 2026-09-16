@@ -1,0 +1,543 @@
+{
+  "@type": "sliceResponse",
+  "size": 24,
+  "number": 1,
+  "numberOfElements": 8,
+  "isFirst": true,
+  "isLast": true,
+  "items": [
+    {
+      "id": "69913fd354dcd0275da2274a",
+      "type": "FEED_ITEM_STAR_POST",
+      "typeId": "69913fd3c24c7f199a411323",
+      "title": "",
+      "description": "",
+      "tags": [],
+      "createdAt": "2026-02-15T03:38:59.076Z",
+      "publishedAt": "2026-02-15T03:38:59.287Z",
+      "commentCount": 17,
+      "latestComment": {
+        "type": "COMMENT",
+        "id": "69a88dd090ca510514440d9d",
+        "body": "你好",
+        "parentId": "69913fd3c24c7f199a411323",
+        "contentId": "69913fd3c24c7f199a411323",
+        "author": {
+          "id": "69a889966df88b5acc72fe40",
+          "nickname": "李钟硕堕落的星空",
+          "avatarImgPath": "https://cdn.static.bstage.in/static/avatars/hiand/avatar-default-2.png",
+          "type": "BASIC",
+          "status": "ACTIVATED",
+          "labels": []
+        },
+        "reactionCounts": {},
+        "blocked": false,
+        "createdAt": "2026-03-04T19:53:52.184Z",
+        "updatedAt": "2026-03-04T19:53:52.184Z"
+      },
+      "commentedStars": [],
+      "reactionCounts": {
+        "HAHA": 2,
+        "FIRE": 6,
+        "SAD": 2,
+        "LIKE": 45,
+        "WOW": 11,
+        "NICE": 6,
+        "LOVE": 5,
+        "CONGRATS": 5,
+        "NERVOUS": 3,
+        "HUG": 3
+      },
+      "starReactions": [],
+      "paid": false,
+      "lounge": {
+        "id": "675fad41e365130a69a73f0f",
+        "handle": "byunyohan",
+        "name": "BYUN YO HAN"
+      },
+      "author": {
+        "id": "674d1dce46c6da756bd307c2",
+        "nickname": "변요한",
+        "avatarImgPath": "https://image.static.bstage.in/cdn-cgi/image/metadata=none/hiand/profile/d6ea559e-467b-4052-9d93-fa11be25c02f/94313629-2b65-4e25-a499-202b037cfa96/ori.png",
+        "type": "STAR"
+      },
+      "mainImage": "https://image.static.bstage.in/cdn-cgi/image/metadata=none/hiand/f5eefe6b-6db1-4544-ac01-4fafe2943192/a058158a-d89e-4a92-9c2a-c6e98467da1b/ori.jpeg",
+      "images": [
+        "https://image.static.bstage.in/cdn-cgi/image/metadata=none/hiand/f5eefe6b-6db1-4544-ac01-4fafe2943192/a058158a-d89e-4a92-9c2a-c6e98467da1b/ori.jpeg"
+      ]
+    },
+    {
+      "id": "68098e24727acf50e040000c",
+      "type": "FEED_ITEM_STAR_POST",
+      "typeId": "68098e2394aaa5447c627cbf",
+      "title": "🎁🙏🤎",
+      "description": "🎁🙏🤎",
+      "tags": [],
+      "createdAt": "2025-04-24T01:04:35.760Z",
+      "publishedAt": "2025-04-24T01:04:36.180Z",
+      "commentCount": 36,
+      "latestComment": {
+        "type": "COMMENT",
+        "id": "6857208622f23a1caf6d4234",
+        "body": "안녕하세요, 잘 지내세요? 생활은 괜찮으세요?",
+        "parentId": "68098e2394aaa5447c627cbf",
+        "contentId": "68098e2394aaa5447c627cbf",
+        "author": {
+          "id": "685248f89cb6425261d4a6c9",
+          "nickname": "رورو",
+          "avatarImgPath": "https://cdn.static.astage.in/static/avatars/avatar-default-3.png",
+          "type": "BASIC",
+          "status": "SLEPT",
+          "labels": []
+        },
+        "reactionCounts": {},
+        "blocked": false,
+        "createdAt": "2025-06-21T21:13:42.328Z",
+        "updatedAt": "2025-06-21T21:13:42.328Z"
+      },
+      "commentedStars": [],
+      "reactionCounts": {
+        "HAHA": 21,
+        "FIRE": 34,
+        "SAD": 28,
+        "LIKE": 120,
+        "WOW": 45,
+        "NICE": 23,
+        "LOVE": 25,
+        "CONGRATS": 28,
+        "NERVOUS": 18,
+        "HUG": 22
+      },
+      "starReactions": [],
+      "paid": false,
+      "lounge": {
+        "id": "675fad41e365130a69a73f0f",
+        "handle": "byunyohan",
+        "name": "BYUN YO HAN"
+      },
+      "author": {
+        "id": "674d1dce46c6da756bd307c2",
+        "nickname": "변요한",
+        "avatarImgPath": "https://image.static.bstage.in/cdn-cgi/image/metadata=none/hiand/profile/d6ea559e-467b-4052-9d93-fa11be25c02f/94313629-2b65-4e25-a499-202b037cfa96/ori.png",
+        "type": "STAR"
+      },
+      "mainImage": "https://image.static.bstage.in/cdn-cgi/image/metadata=none/hiand/bef77c01-1cb1-4ccf-a310-56c0b1484f3d/44ae7876-c5aa-4513-8b66-6675578a9526/ori.jpeg",
+      "images": [
+        "https://image.static.bstage.in/cdn-cgi/image/metadata=none/hiand/bef77c01-1cb1-4ccf-a310-56c0b1484f3d/44ae7876-c5aa-4513-8b66-6675578a9526/ori.jpeg"
+      ]
+    },
+    {
+      "id": "67d8d495016cce64f078357f",
+      "type": "FEED_ITEM_STAR_POST",
+      "typeId": "67d8d4958c8f7c12d1f78e8f",
+      "title": "🚁",
+      "description": "🚁",
+      "tags": [],
+      "createdAt": "2025-03-18T02:04:05.686Z",
+      "publishedAt": "2025-03-18T02:04:05.987Z",
+      "commentCount": 34,
+      "latestComment": {
+        "type": "COMMENT",
+        "id": "680990cb11b2c029d932b388",
+        "body": "🎵 I believe I can fly 🎶",
+        "parentId": "67d8d4958c8f7c12d1f78e8f",
+        "contentId": "67d8d4958c8f7c12d1f78e8f",
+        "author": {
+          "id": "672e48ab68781b5d08cfaf5c",
+          "nickname": "Sev🌻세브린🥁",
+          "avatarImgPath": "https://image.static.bstage.in/cdn-cgi/image/metadata=none/hiand/profile/e5e7d6bc-5d31-469f-a906-8a9f698101ff/6a6fb24e-ac4f-44b5-ba56-b7ddc3de2978/ori.jpg",
+          "type": "BASIC",
+          "status": "ACTIVATED",
+          "labels": []
+        },
+        "reactionCounts": {},
+        "blocked": false,
+        "createdAt": "2025-04-24T01:15:55.490Z",
+        "updatedAt": "2025-04-24T01:15:55.490Z"
+      },
+      "commentedStars": [],
+      "reactionCounts": {
+        "HAHA": 22,
+        "FIRE": 27,
+        "SAD": 22,
+        "LIKE": 123,
+        "WOW": 61,
+        "NICE": 21,
+        "LOVE": 24,
+        "CONGRATS": 26,
+        "NERVOUS": 34,
+        "HUG": 20
+      },
+      "starReactions": [
+        {
+          "star": {
+            "id": "670cb28b9370b859078f5fda",
+            "nickname": "나대신백숙먹을사람?(10월1일점심)",
+            "avatarImgPath": "https://image.static.bstage.in/cdn-cgi/image/metadata=none/hiand/profile/e40c41c4-96d4-469f-83ad-22e69b988d8b/32c7d6f2-5daf-40da-8664-862d6e278515/ori.jpeg",
+            "type": "STAR",
+            "status": "ACTIVATED",
+            "labels": []
+          },
+          "reactionCode": "LIKE",
+          "lastUpdatedAt": "2025-03-29T00:27:28.330Z"
+        }
+      ],
+      "paid": false,
+      "lounge": {
+        "id": "675fad41e365130a69a73f0f",
+        "handle": "byunyohan",
+        "name": "BYUN YO HAN"
+      },
+      "author": {
+        "id": "674d1dce46c6da756bd307c2",
+        "nickname": "변요한",
+        "avatarImgPath": "https://image.static.bstage.in/cdn-cgi/image/metadata=none/hiand/profile/d6ea559e-467b-4052-9d93-fa11be25c02f/94313629-2b65-4e25-a499-202b037cfa96/ori.png",
+        "type": "STAR"
+      },
+      "mainImage": "https://image.static.bstage.in/cdn-cgi/image/metadata=none/hiand/b09f6d02-8ccf-4fd5-aa45-342d72407543/5694bf01-a1ce-49bd-8f1c-f7672581473a/ori.jpeg",
+      "images": [
+        "https://image.static.bstage.in/cdn-cgi/image/metadata=none/hiand/b09f6d02-8ccf-4fd5-aa45-342d72407543/5694bf01-a1ce-49bd-8f1c-f7672581473a/ori.jpeg"
+      ]
+    },
+    {
+      "id": "67aeeeab80af1f3bcfa46481",
+      "type": "FEED_ITEM_STAR_POST",
+      "typeId": "67aeeeabccc4ac77bd1d5a1d",
+      "title": "해피 발렌타인🍫🤎",
+      "description": "해피 발렌타인🍫🤎",
+      "tags": [],
+      "createdAt": "2025-02-14T07:20:11.737Z",
+      "publishedAt": "2025-02-14T07:20:11.930Z",
+      "commentCount": 49,
+      "latestComment": {
+        "type": "COMMENT",
+        "id": "68d2e9ecfcb7ac4e63e9ad25",
+        "body": "🤍🤍🤍",
+        "parentId": "67aeeeabccc4ac77bd1d5a1d",
+        "contentId": "67aeeeabccc4ac77bd1d5a1d",
+        "author": {
+          "id": "68cc08c5bae65a6b009c6d6e",
+          "nickname": "",
+          "avatarImgPath": "",
+          "type": "BASIC",
+          "status": "DEACTIVATED",
+          "labels": []
+        },
+        "reactionCounts": {},
+        "blocked": false,
+        "createdAt": "2025-09-23T18:41:48.938Z",
+        "updatedAt": "2025-09-23T18:41:48.938Z"
+      },
+      "commentedStars": [],
+      "reactionCounts": {
+        "HAHA": 24,
+        "FIRE": 38,
+        "SAD": 29,
+        "LIKE": 160,
+        "WOW": 62,
+        "NICE": 25,
+        "LOVE": 34,
+        "CONGRATS": 32,
+        "NERVOUS": 22,
+        "HUG": 23
+      },
+      "starReactions": [
+        {
+          "star": {
+            "id": "670cb28b9370b859078f5fda",
+            "nickname": "나대신백숙먹을사람?(10월1일점심)",
+            "avatarImgPath": "https://image.static.bstage.in/cdn-cgi/image/metadata=none/hiand/profile/e40c41c4-96d4-469f-83ad-22e69b988d8b/32c7d6f2-5daf-40da-8664-862d6e278515/ori.jpeg",
+            "type": "STAR",
+            "status": "ACTIVATED",
+            "labels": []
+          },
+          "reactionCode": "LIKE",
+          "lastUpdatedAt": "2025-03-17T02:44:01.428Z"
+        }
+      ],
+      "paid": false,
+      "lounge": {
+        "id": "675fad41e365130a69a73f0f",
+        "handle": "byunyohan",
+        "name": "BYUN YO HAN"
+      },
+      "author": {
+        "id": "674d1dce46c6da756bd307c2",
+        "nickname": "변요한",
+        "avatarImgPath": "https://image.static.bstage.in/cdn-cgi/image/metadata=none/hiand/profile/d6ea559e-467b-4052-9d93-fa11be25c02f/94313629-2b65-4e25-a499-202b037cfa96/ori.png",
+        "type": "STAR"
+      },
+      "mainImage": "https://image.static.bstage.in/cdn-cgi/image/metadata=none/hiand/719f768e-3a53-453b-b60f-6d7d6afc2066/60e33f5b-de68-4de5-8498-ae0021ea2b97/ori.jpeg",
+      "images": [
+        "https://image.static.bstage.in/cdn-cgi/image/metadata=none/hiand/719f768e-3a53-453b-b60f-6d7d6afc2066/60e33f5b-de68-4de5-8498-ae0021ea2b97/ori.jpeg"
+      ]
+    },
+    {
+      "id": "67addb78785f3c2167fef7c0",
+      "type": "FEED_ITEM_STAR_POST",
+      "typeId": "67addb77734334127ff8d07e",
+      "title": "균형이랑. 내일 저녁 8시 40분.",
+      "description": "균형이랑. 내일 저녁 8시 40분.",
+      "tags": [],
+      "createdAt": "2025-02-13T11:45:59.948Z",
+      "publishedAt": "2025-02-13T11:46:00.143Z",
+      "commentCount": 35,
+      "latestComment": {
+        "type": "COMMENT",
+        "id": "67af01d40a04b82243fd120c",
+        "body": "😍❤️",
+        "parentId": "67addb77734334127ff8d07e",
+        "contentId": "67addb77734334127ff8d07e",
+        "author": {
+          "id": "672f8d96cf119e61504c8662",
+          "nickname": "Holipah_s",
+          "avatarImgPath": "https://image.static.bstage.in/cdn-cgi/image/metadata=none/hiand/profile/31281bf6-0d57-4288-abe0-b80c70ba5421/bf17981b-f495-472a-a1ac-774a6fd65090/ori.jpg",
+          "type": "BASIC",
+          "status": "ACTIVATED",
+          "labels": []
+        },
+        "reactionCounts": {},
+        "blocked": false,
+        "createdAt": "2025-02-14T08:41:56.104Z",
+        "updatedAt": "2025-02-14T08:41:56.104Z"
+      },
+      "commentedStars": [],
+      "reactionCounts": {
+        "HAHA": 22,
+        "FIRE": 28,
+        "SAD": 21,
+        "LIKE": 135,
+        "WOW": 53,
+        "NICE": 23,
+        "LOVE": 25,
+        "CONGRATS": 26,
+        "NERVOUS": 20,
+        "HUG": 23
+      },
+      "starReactions": [
+        {
+          "star": {
+            "id": "670cb28b9370b859078f5fda",
+            "nickname": "나대신백숙먹을사람?(10월1일점심)",
+            "avatarImgPath": "https://image.static.bstage.in/cdn-cgi/image/metadata=none/hiand/profile/e40c41c4-96d4-469f-83ad-22e69b988d8b/32c7d6f2-5daf-40da-8664-862d6e278515/ori.jpeg",
+            "type": "STAR",
+            "status": "ACTIVATED",
+            "labels": []
+          },
+          "reactionCode": "LIKE",
+          "lastUpdatedAt": "2025-03-17T02:43:53.602Z"
+        }
+      ],
+      "paid": false,
+      "lounge": {
+        "id": "675fad41e365130a69a73f0f",
+        "handle": "byunyohan",
+        "name": "BYUN YO HAN"
+      },
+      "author": {
+        "id": "674d1dce46c6da756bd307c2",
+        "nickname": "변요한",
+        "avatarImgPath": "https://image.static.bstage.in/cdn-cgi/image/metadata=none/hiand/profile/d6ea559e-467b-4052-9d93-fa11be25c02f/94313629-2b65-4e25-a499-202b037cfa96/ori.png",
+        "type": "STAR"
+      },
+      "mainImage": "https://image.static.bstage.in/cdn-cgi/image/metadata=none/hiand/f7d2af01-14b8-44f1-a566-c1340d1a3b54/30aa2d2f-1f5e-4db8-b4e3-5d577a73a8a9/ori.jpeg",
+      "images": [
+        "https://image.static.bstage.in/cdn-cgi/image/metadata=none/hiand/f7d2af01-14b8-44f1-a566-c1340d1a3b54/30aa2d2f-1f5e-4db8-b4e3-5d577a73a8a9/ori.jpeg"
+      ]
+    },
+    {
+      "id": "67a47a46cea18279929f21d3",
+      "type": "FEED_ITEM_STAR_POST",
+      "typeId": "67a47a46406b10690993eca3",
+      "title": "tvN ‘에드워드리의 컨츄리쿡' \n2월 14일 금요일 오후 8시 40분 첫 방송.",
+      "description": "tvN ‘에드워드리의 컨츄리쿡' \n2월 14일 금요일 오후 8시 40분 첫 방송.",
+      "tags": [],
+      "createdAt": "2025-02-06T09:00:54.635Z",
+      "publishedAt": "2025-02-06T09:00:54.839Z",
+      "commentCount": 30,
+      "latestComment": {
+        "type": "COMMENT",
+        "id": "67d888beaa91815dd94f044d",
+        "body": "Esta muy bien 💋💋💋💋",
+        "parentId": "67a47a46406b10690993eca3",
+        "contentId": "67a47a46406b10690993eca3",
+        "author": {
+          "id": "67d5747ab684830ac2cca252",
+          "nickname": "",
+          "avatarImgPath": "",
+          "type": "BASIC",
+          "status": "DEACTIVATED",
+          "labels": []
+        },
+        "reactionCounts": {},
+        "blocked": false,
+        "createdAt": "2025-03-17T20:40:30.197Z",
+        "updatedAt": "2025-03-17T20:40:30.197Z"
+      },
+      "commentedStars": [],
+      "reactionCounts": {
+        "HAHA": 19,
+        "FIRE": 21,
+        "SAD": 17,
+        "LIKE": 93,
+        "WOW": 40,
+        "NICE": 19,
+        "LOVE": 22,
+        "CONGRATS": 17,
+        "NERVOUS": 18,
+        "HUG": 17
+      },
+      "starReactions": [],
+      "paid": false,
+      "lounge": {
+        "id": "675fad41e365130a69a73f0f",
+        "handle": "byunyohan",
+        "name": "BYUN YO HAN"
+      },
+      "author": {
+        "id": "674d1dce46c6da756bd307c2",
+        "nickname": "변요한",
+        "avatarImgPath": "https://image.static.bstage.in/cdn-cgi/image/metadata=none/hiand/profile/d6ea559e-467b-4052-9d93-fa11be25c02f/94313629-2b65-4e25-a499-202b037cfa96/ori.png",
+        "type": "STAR"
+      },
+      "mainImage": "https://image.static.bstage.in/cdn-cgi/image/metadata=none/hiand/media/67a47aac5c1df915f5b83d6a/images/ori_image.0000000.jpg",
+      "video": {
+        "preset": "STARPOST_720P",
+        "hlsPath": {
+          "source": "MEDIA_S3",
+          "path": "/media/67a47aac5c1df915f5b83d6a/hls/ori.m3u8"
+        },
+        "dashPath": {
+          "source": "MEDIA_S3",
+          "path": "/media/67a47aac5c1df915f5b83d6a/dash/ori.mpd"
+        },
+        "thumbnailPaths": [
+          {
+            "source": "S3",
+            "path": "/media/67a47aac5c1df915f5b83d6a/images/ori_image.0000000.jpg"
+          }
+        ],
+        "status": "COMPLETE",
+        "duration": 30083
+      }
+    },
+    {
+      "id": "67862418b33ed73da0c8538d",
+      "type": "FEED_ITEM_STAR_POST",
+      "typeId": "678624176a0095658c284221",
+      "title": "복자랑. 감기 조심하세요!",
+      "description": "복자랑. 감기 조심하세요!",
+      "tags": [],
+      "createdAt": "2025-01-14T08:45:11.982Z",
+      "publishedAt": "2025-01-14T08:45:12.205Z",
+      "commentCount": 49,
+      "latestComment": {
+        "type": "COMMENT",
+        "id": "69082da50a9be26a836aa60e",
+        "body": "사진 속에서 누가 제일 귀여운지 모르겠어요! 😍💖",
+        "parentId": "678624176a0095658c284221",
+        "contentId": "678624176a0095658c284221",
+        "author": {
+          "id": "68a3183a5130c922643bbdd3",
+          "nickname": "Liv",
+          "avatarImgPath": "https://image.static.bstage.in/cdn-cgi/image/metadata=none/hiand/profile/c256582f-da84-4e79-b113-d64e190abef5/f2805207-f4fa-4241-b5a7-8be9a17f67a8/ori.png",
+          "type": "BASIC",
+          "status": "ACTIVATED",
+          "labels": []
+        },
+        "reactionCounts": {},
+        "blocked": false,
+        "createdAt": "2025-11-03T04:20:53.763Z",
+        "updatedAt": "2025-11-03T04:20:53.763Z"
+      },
+      "commentedStars": [],
+      "reactionCounts": {
+        "HAHA": 18,
+        "FIRE": 25,
+        "SAD": 27,
+        "LIKE": 157,
+        "WOW": 54,
+        "NICE": 20,
+        "LOVE": 31,
+        "CONGRATS": 24,
+        "NERVOUS": 19,
+        "HUG": 18
+      },
+      "starReactions": [],
+      "paid": false,
+      "lounge": {
+        "id": "675fad41e365130a69a73f0f",
+        "handle": "byunyohan",
+        "name": "BYUN YO HAN"
+      },
+      "author": {
+        "id": "674d1dce46c6da756bd307c2",
+        "nickname": "변요한",
+        "avatarImgPath": "https://image.static.bstage.in/cdn-cgi/image/metadata=none/hiand/profile/d6ea559e-467b-4052-9d93-fa11be25c02f/94313629-2b65-4e25-a499-202b037cfa96/ori.png",
+        "type": "STAR"
+      },
+      "mainImage": "https://image.static.bstage.in/cdn-cgi/image/metadata=none/hiand/ed0d291e-b74f-4028-a1b5-ca320b40b744/99d11a1e-d147-48dc-b721-4ede97d1d389/ori.jpeg",
+      "images": [
+        "https://image.static.bstage.in/cdn-cgi/image/metadata=none/hiand/ed0d291e-b74f-4028-a1b5-ca320b40b744/99d11a1e-d147-48dc-b721-4ede97d1d389/ori.jpeg"
+      ]
+    },
+    {
+      "id": "677e3606acafe348fa3aba81",
+      "type": "FEED_ITEM_STAR_POST",
+      "typeId": "677e36069b395871e214b8f5",
+      "title": "오늘 날이 많이 추워졌네요. 다들 뭐하고 계세요?",
+      "description": "오늘 날이 많이 추워졌네요. 다들 뭐하고 계세요?",
+      "tags": [],
+      "createdAt": "2025-01-08T08:23:34.709Z",
+      "publishedAt": "2025-01-08T08:23:34.966Z",
+      "commentCount": 73,
+      "latestComment": {
+        "type": "COMMENT",
+        "id": "6785a5378918172f673991a2",
+        "body": "I love you Yohan oppa 🫶🏻🤎",
+        "parentId": "677e36069b395871e214b8f5",
+        "contentId": "677e36069b395871e214b8f5",
+        "author": {
+          "id": "67597ffa52ea4d68e6f17182",
+          "nickname": "Zahrayohan",
+          "avatarImgPath": "https://cdn.static.astage.in/static/avatars/avatar-default-1.png",
+          "type": "BASIC",
+          "status": "SLEPT",
+          "labels": []
+        },
+        "reactionCounts": {
+          "SAD": 1
+        },
+        "blocked": false,
+        "createdAt": "2025-01-13T23:43:51.424Z",
+        "updatedAt": "2025-01-13T23:43:51.424Z"
+      },
+      "commentedStars": [],
+      "reactionCounts": {
+        "HAHA": 12,
+        "FIRE": 26,
+        "SAD": 27,
+        "LIKE": 124,
+        "WOW": 62,
+        "NICE": 23,
+        "LOVE": 26,
+        "CONGRATS": 30,
+        "NERVOUS": 25,
+        "HUG": 22
+      },
+      "starReactions": [],
+      "paid": false,
+      "lounge": {
+        "id": "675fad41e365130a69a73f0f",
+        "handle": "byunyohan",
+        "name": "BYUN YO HAN"
+      },
+      "author": {
+        "id": "674d1dce46c6da756bd307c2",
+        "nickname": "변요한",
+        "avatarImgPath": "https://image.static.bstage.in/cdn-cgi/image/metadata=none/hiand/profile/d6ea559e-467b-4052-9d93-fa11be25c02f/94313629-2b65-4e25-a499-202b037cfa96/ori.png",
+        "type": "STAR"
+      }
+    }
+  ]
+}

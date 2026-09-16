@@ -1,0 +1,22 @@
+{
+  "loungeId": "675fad41e365130a69a73f0f",
+  "handle": "byunyohan",
+  "name": "BYUN YO HAN",
+  "thumbnailImage": "https://image.static.bstage.in/cdn-cgi/image/metadata=none/hiand/a1ccbfc9-20db-41d7-b509-bc3fbf20dc5b/9740c963-c47d-4e45-82ef-1300979f2d89/ori.png",
+  "joined": false,
+  "isHost": false,
+  "tabs": [
+    {
+      "type": "STORY",
+      "name": "Story"
+    },
+    {
+      "type": "CONTENT",
+      "name": "Contents"
+    },
+    {
+      "type": "COMMUNITY",
+      "name": "Community"
+    }
+  ]
+}
