@@ -1,7 +1,10 @@
-export default function LoungePage() {
-  return (
-    <main className="mx-auto min-h-svh max-w-[1080px] bg-white px-5 pt-6 text-neutral-900 min-[601px]:px-8 min-[601px]:pt-10">
-      <h1 className="text-center text-lg leading-[26px] font-bold">라운지</h1>
-    </main>
-  );
+import { redirect } from "next/navigation";
+
+export default async function LoungePage({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const { id } = await params;
+  redirect(`/lounge/${encodeURIComponent(id)}/story`);
 }

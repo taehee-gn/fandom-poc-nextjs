@@ -17,7 +17,7 @@ export default function Home() {
         </header>
 
         <Link
-          href="/lounge"
+          href="/lounge/byunyohan"
           className="flex min-h-[83px] w-full cursor-pointer items-center justify-center gap-1.5 rounded border-0 bg-transparent p-4 text-sm leading-[22px] text-[#999] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#4d7cff]"
         >
           <span className="relative block size-3.5 shrink-0" aria-hidden="true">
