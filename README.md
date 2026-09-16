@@ -1,36 +1,172 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Next.js 구조
 
-## Getting Started
+### 개발 구조 및 설계 원칙
 
-First, run the development server:
+- **응집도를 높인다.**
+  - 관련된 코드의 변경 범위를 쉽게 파악할 수 있도록 한다.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **구조와 의존성의 흐름을 쉽게 파악할 수 있도록 한다.**
+  - 코드가 어디에 속하는지, 어떤 영역에 의존하는지 명확하게 한다.
+
+### 폴더 구조
+
+폴더 및 파일을 단순히 파일 종류나 재사용 여부로 분리하지 않고, **애플리케이션에서 가지는 책임과 의미를 기준으로 분리한다.**
+
+1. 이 코드가 왜 존재하는지, 어떤 책임과 의미를 가지는지 파악한다.
+2. 특정 기능이나 도메인에 속한다면 해당 의미를 기준으로 묶는다.
+3. 공통화 여부는 단순한 재사용 횟수가 아니라 코드가 가지는 의미와 책임을 기준으로 판단한다.
+
+```text
+                    이 코드는 왜 존재하는가?
+                            │
+              ┌─────────────┼─────────────┐
+              ↓             ↓             ↓
+         비즈니스 기능    도메인 개념      공통/기반
+              │             │             │
+           feature        domain       shared/lib
+              │
+       ┌──────┼──────┐
+       ↓      ↓      ↓
+   component hook    api
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### 분류 예시
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- 1차 분류: `user`라는 의미/기능
+- 2차 분류: 해당 영역 내부에서 역할에 따라 분리
+  - components
+  - hooks
+  - api
+  - types
+  - utils 등
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```text
+features/
+└── user/
+    ├── components/
+    ├── hooks/
+    ├── api/
+    └── types/
+```
 
-## Learn More
+### Feature 간 의존성
 
-To learn more about Next.js, take a look at the following resources:
+Feature 간 참조 자체를 문제로 보지는 않는다.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+다만 다음과 같이 서로에 대한 의존이 반복되거나 순환 의존성이 발생한다면 경계가 적절한지 검토한다.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```text
+user → auth
+auth → user
+```
 
-## Deploy on Vercel
+이 경우 다음을 확인한다.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `auth`와 `user`의 책임이 명확하게 분리되어 있는가?
+- 서로 참조하는 이유가 반복적으로 발생하는가?
+- 실제로 하나의 더 큰 기능이나 도메인에 속하는 것은 아닌가?
+- 두 영역이 공통으로 의존해야 하는 별도의 개념이 존재하는 것은 아닌가?
+- Feature 경계 자체가 잘못 나뉘었다면 책임을 재정의할 필요가 있는가?
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+필요하다면 더 큰 상위 개념으로 묶거나, 공통으로 의존하는 별도의 책임을 분리한다.
+
+### Next.js 폴더 기준
+
+```text
+src/
+├── app/
+├── features/
+├── shared/
+└── lib/
+```
+
+- `app`
+  - Next.js의 라우팅 및 화면 진입점
+  - 서비스/페이지의 구조를 표현
+  - layout, page, route handler 등 Next.js 프레임워크 영역
+
+- `features`
+  - 실제 사용자가 수행하는 기능 및 비즈니스 행위
+  - 예: auth, product, cart, order, messaging 등
+
+- `shared`
+  - 특정 Feature나 도메인에 종속되지 않는 애플리케이션 공통 코드
+  - 예: Button, Modal, 공통 hooks, utils 등
+
+- `lib`
+  - 외부 기술 및 인프라와 연결되는 코드
+  - 예: Axios client, 외부 SDK wrapper, Sentry 설정 등
+
+`app`과 `features`의 구조를 반드시 동일하게 맞출 필요는 없다.
+
+```text
+app/shop → product + cart + order
+app/pop  → product + profile
+app/dm   → messaging + profile
+```
+
+즉,
+
+- `app`: **어디에서 보여지는가**
+- `features`: **무엇을 하는가**
+- `shared`: **특정 기능 의미 없이 공통으로 사용되는가**
+- `lib`: **어떤 기술적 기반을 통해 동작하는가**
+
+---
+
+## 코드 설계 구조
+
+### 기준
+
+**통합 테스트가 편리하도록 코드의 응집도를 높이는 방향으로 설계한다.**
+
+- 상태와 데이터 흐름, 관련 행위의 책임을 하나의 의미 있는 기능/컴포넌트 경계에 응집한다.
+- 상태를 무조건 상위에서 관리하지 않고, **해당 상태를 사용하는 가장 좁은 공통 범위에서 관리한다.**
+- 하나의 경계가 지나치게 커지면 책임에 따라 hook, component 등으로 다시 분리한다.
+- 컴포넌트를 과도하게 분리하여 불필요한 props 전달이 발생하지 않도록 한다.
+
+예:
+
+```text
+CartList
+│
+├── 상태 / 데이터 흐름 조율
+├── useCartActions
+├── useCartSelection
+│
+└── CartItem
+     └── UI 표현 및 국소적인 UI 상태
+```
+
+테스트 코드 역시 관련 구현과 함께 변경되는 경우 가까이 배치하는 것을 기본으로 한다.
+
+---
+
+## 결론
+
+1. **폴더 구조**
+   - 애플리케이션 코드의 **책임과 의미를 기준으로 분리**한다.
+   - 파일 종류나 재사용 여부보다 **“이 코드가 왜 존재하고 어디에 속하는가”**를 우선해서 판단한다.
+
+2. **코드 구조**
+   - **통합 테스트가 쉬운 방향으로 응집도를 높인다.**
+   - 상태와 데이터 흐름, 관련 행위를 하나의 의미 있는 경계에 모은다.
+   - 하위 컴포넌트는 가능한 한 표현과 국소적인 UI 책임에 집중한다.
+   - 상태는 해당 상태를 사용하는 가장 좁은 공통 범위에서 관리한다.
+
+---
+
+## 통신 구조
+
+### Axios 사용
+
+Axios를 공통 HTTP Client로 사용한다.
+
+- timeout 처리
+- 인증 및 공통 header 처리
+- interceptor
+- HTTP 오류 처리
+- query params 처리
+- 요청/응답 공통 처리
+
+HTTP 통신에서 반복적으로 필요한 기능을 직접 구현하고 유지보수하는 비용을 줄이고, 서비스의 실제 비즈니스 로직 구현에 집중하기 위해 사용한다.
